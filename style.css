@@ -1,0 +1,282 @@
+:root {
+  --primary-color: Black;
+  --secondary-color: white;
+  --auxilary-color: #d3e97a;
+  --backdrop-color: rgb(54, 53, 53);
+
+  --font-family-primary: "Epilogue", sans-serif;
+  --font-family-secondary: "Bebas Neue", sans-serif;
+  --font-family-third: "Manrope", sans-serif;
+}
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+a,
+.topnav,
+details,
+.heading4-text,
+.date {
+  margin: 0;
+  padding: 0;
+}
+
+/* base styles */
+body {
+  background-color: var(--primary-color);
+}
+
+.logo {
+  font-family: var(--font-family-secondary);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.home-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 5rem;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(68, 68, 101);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-img,
+.img-hero {
+  width: 550px; /* set your desired size */
+  height: 550px;
+  border-radius: 50%; /* makes it round */
+  border: 5px solid #d3e97a; /* change color/width as needed */
+  object-fit: cover;
+}
+
+.img-hero {
+  border-radius: 50%;
+}
+
+h1 {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-family: var(--font-family);
+}
+h3 {
+  font-family: var(--font-family-secondary);
+  color: var(--secondary-color);
+  font-size: 3rem;
+}
+
+p {
+  color: var(--secondary-color);
+  font-family: var(--font-family-third);
+  font-size: 1rem;
+}
+
+.Heading1 {
+  font-family: var(--font-family-secondary);
+  font-size: 6.3125rem;
+}
+
+.heading2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.heading2-text {
+  font-family: var(--font-family-third);
+  font-weight: 400;
+  font-size: 1.5;
+}
+
+.heading3 {
+  font-family: var(--font-family-third);
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.heading4 {
+  font-family: var(--font-family-third);
+  font-size: 0.89rem;
+  font-weight: 600;
+}
+
+.heading4-text {
+  font-family: var(--font-family-third);
+  font-weight: 500;
+  font-size: 0.89rem;
+}
+
+.featured {
+  margin: 5rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+
+  margin: 5rem;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 37.5rem;
+  height: 37.5rem;
+
+  background-color: var(--backdrop-color);
+  border-radius: 1rem;
+}
+
+.preview > img {
+  width: 27rem;
+  height: 18.25rem;
+  border-radius: 0.425rem;
+}
+
+.description {
+  /* display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  text-align: start; */
+  margin: 3rem;
+}
+
+.call-to-action {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background-color: var(--auxilary-color);
+  border-radius: 6.25rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  width: auto;
+  font-weight: 500;
+  padding-top: 15px;
+  padding-right: 2rem;
+  padding-bottom: 15px;
+  padding-left: 2rem;
+  border-style: none;
+}
+
+.social-icons {
+  margin-left: 1.5rem;
+  font-size: 2.5rem;
+}
+
+#linkedin {
+  border-radius: 50%;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+li {
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+}
+
+.date {
+  margin-left: auto;
+}
+
+.site-link {
+  display: flex;
+  align-items: center;
+}
+#btn-demo {
+  background-color: blue;
+  color: var(--secondary-color);
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+
+#btn-github {
+  background-color: blue;
+  color: var(--secondary-color);
+  margin-top: 1.25rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding-bottom: 20px;
+  color: var(--auxilary-color);
+}
+
+.line-break {
+  border: none;
+  border-top: 2.2px solid rgb(27, 26, 26); /* Black underline */
+  margin-top: 5rem;
+  width: 100%;
+}
+
+hr {
+  border: none;
+  border-top: 2.5px solid rgb(27, 26, 26); /* Black underline */
+  width: 100%;
+}
