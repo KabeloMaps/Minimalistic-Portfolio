@@ -2,7 +2,7 @@
   --primary-color: Black;
   --secondary-color: white;
   --auxilary-color: #d3e97a;
-  --backdrop-color: rgb(54, 53, 53);
+  --backdrop-color: rgb(28, 27, 27);
 
   --font-family-primary: "Epilogue", sans-serif;
   --font-family-secondary: "Bebas Neue", sans-serif;
@@ -41,6 +41,7 @@ body {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .home-description {
@@ -49,22 +50,15 @@ body {
   justify-content: center;
   align-content: center;
   margin: 5rem;
-}
-
-.hero-img {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  background-color: rgb(68, 68, 101);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
 }
 
 .hero-img,
 .img-hero {
-  width: 550px; /* set your desired size */
+  width: 550px;
   height: 550px;
-  border-radius: 50%; /* makes it round */
-  border: 5px solid #d3e97a; /* change color/width as needed */
+  border-radius: 50%;
+  border: 5px solid #d3e97a;
   object-fit: cover;
 }
 
@@ -100,8 +94,8 @@ p {
 }
 
 .heading2 {
-  font-size: 3rem;
   font-weight: 400;
+  font-size: 4.5rem;
 }
 
 .heading2-text {
@@ -118,11 +112,17 @@ p {
 
 .heading4 {
   font-family: var(--font-family-third);
-  font-size: 0.89rem;
   font-weight: 600;
+  font-size: 0.89rem;
 }
 
 .heading4-text {
+  font-family: var(--font-family-third);
+  font-weight: 500;
+  font-size: 0.89rem;
+}
+
+.heading5-text {
   font-family: var(--font-family-third);
   font-weight: 500;
   font-size: 0.89rem;
@@ -160,14 +160,9 @@ p {
 }
 
 .description {
-  /* display: flex;
-  flex-direction: column;
-  display: grid;
-  grid-template-columns: 1fr;
+  margin: 0.825rem;
   justify-content: center;
   align-content: center;
-  text-align: start; */
-  margin: 3rem;
 }
 
 .call-to-action {
@@ -239,6 +234,8 @@ a {
 }
 
 .date {
+  margin: 0;
+  padding: 0;
   margin-left: auto;
 }
 
@@ -246,14 +243,14 @@ a {
   display: flex;
   align-items: center;
 }
-#btn-demo {
+.btn-demo {
   background-color: blue;
   color: var(--secondary-color);
   margin-top: 1.25rem;
   cursor: pointer;
 }
 
-#btn-github {
+.btn-github {
   background-color: blue;
   color: var(--secondary-color);
   margin-top: 1.25rem;
