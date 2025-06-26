@@ -41,9 +41,9 @@
     <nav class="topnav">
       <h1 class="logo">KABELO MAPONYA</h1>
       <ul>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#featured">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <!-- End -->
@@ -95,7 +95,7 @@
       <hr class="line-break" />
 
       <!-- Introduction for Featured projects -->
-      <section class="featured">
+      <section class="featured" id="featured">
         <article class="intro-header">
           <h3 class="heading2">FEATURED PROJECTS</h3>
           <p class="heading2-text">
@@ -166,9 +166,73 @@
       </section>
       <!-- End of Huddle landing page -->
 
+      <!-- Home section with dropdown -->
+      <section class="projects">
+        <div class="progression-preview">
+          <p class="progression">Ongoing</p>
+          <img
+            src="./assets/projects/Home-Landing-Page-Preview.jpg"
+            width="50%"
+            alt="product-card-previw"
+          />
+        </div>
+        <article class="description">
+          <h2 class="heading3">Intro Section with Dropdown Navigation</h2>
+          <p>
+            Developed a responsive intro section featuring interactive dropdown
+            navigation using HTML, CSS, and JavaScript. This project tests key
+            front-end skills including menu toggling, event handling, and layout
+            design. A practical challenge that mirrors common UI patterns on
+            modern websites, ideal for strengthening both structural and
+            interactive development techniques.
+          </p>
+          <h2 class="heading4">PROJECT INFO</h2>
+          <hr />
+          <div class="details">
+            <p class="heading4-text">Year</p>
+            <p class="date">2025</p>
+          </div>
+          <hr />
+          <div class="details">
+            <p class="heading4-text">Role</p>
+            <p class="date">Front-end Developer</p>
+          </div>
+
+          <hr />
+          <div class="details">
+            <p class="heading4-text">Technologies</p>
+            <p class="date">
+              HTML&nbsp;&nbsp; |&nbsp;&nbsp;
+              CSS&nbsp;&nbsp;|&nbsp;&nbsp;JAVASCRIPT
+            </p>
+          </div>
+          <hr />
+          <div class="site-link">
+            <button
+              type="button"
+              class="btn-demo"
+              data-link="https://home-section-with-dropdown-navigation.netlify.app
+"
+            >
+              LIVE DEMO
+            </button>
+            <button
+              type="button"
+              class="btn-github"
+              data-link="https://github.com/KabeloMaps/Home-section-with-dropdown-navigation"
+            >
+              SEE ON GITHUB
+            </button>
+          </div>
+        </article>
+      </section>
+      <!-- End of Home section with dropdown -->
+
       <!-- E-commerce Product Page-->
       <section class="projects">
-        <div class="preview">
+        <div class="progression-preview">
+          <p class="progression">Ongoing</p>
+
           <img
             src="./assets/projects/E-commerce-Preview.jpg"
             width="50%"
@@ -560,9 +624,86 @@
           </div>
         </article>
       </section>
-      <!-- Recipe page -->
+      <!-- End of Recipe page -->
     </main>
     <!-- End of Main section -->
-    <footer></footer>
+    <hr />
+
+    <section id="about">
+      <div class="about-heading">
+        <h3 class="heading2">ABOUT ME</h3>
+      </div>
+      <div class="about-description">
+        <h1 class="heading5">
+          I am a software developer based in Johannesburg, passionate about
+          turning designs into code and solving problems with code!.
+        </h1>
+        <p>
+          A passionate and detail-oriented Frontend Developer based in
+          Johannesburg and Cape Town. With hands-on experience in JavaScript,
+          React.js, HTML, CSS, and C#. I enjoy crafting interactive and
+          user-friendly web interfaces. Completed my BCom in Information Systems
+          at the University of Cape Town, I bring a strong foundation in Web
+          development, UI/UX principles, version control, and agile
+          methodologies. Beyond coding, I’m an avid chess player and piano
+          player.
+        </p>
+
+        <p class="more-about-me">More about me</p>
+      </div>
+    </section>
+    <hr />
+    <footer>
+      <div class="footer-description" id="contact">
+        <h3 class="Lets-connect">Let's Connet</h3>
+        <p>
+          say hello at <span class="colored-line">khmaponya@gmail.com</span>
+        </p>
+        <p>
+          for more information, please take a look at my
+          <a
+            href="./assets/resume/Front-End Development CV.pdf"
+            download
+            class="colored-line"
+            >resume</a
+          >
+        </p>
+        <div class="social-icons-footer">
+          <span id="linkedin">
+            <a
+              href="https://www.linkedin.com/in/kabelomaponya/"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-linkedin"></i>
+            </a>
+          </span>
+          <span id="github"
+            ><a
+              href="https://github.com/KabeloMaps?tab=repositories"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-github"></i> </a
+          ></span>
+          <p class="copyright">&copy; 2025 Kabelo Maponya</p>
+        </div>
+      </div>
+
+      <div class="form">
+        <form action="/action_page.php">
+          <label for="fname">Name</label><br />
+          <input type="text" class="fname" name="fname" /><br />
+          <label for="email">Email</label><br />
+          <input type="text" class="email" name="email" /><br /><br />
+          <label for="subject">Subject</label><br />
+          <input type="text" class="subject" name="subject" /><br /><br />
+          <label for="message">Message</label><br />
+          <textarea class="message" name="message" rows="4" cols="50"></textarea
+          ><br /><br />
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+
+      <div class="footer-form"></div>
+    </footer>
   </body>
 </html>
