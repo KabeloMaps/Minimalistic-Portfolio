@@ -1,24 +1,8 @@
 ### Screenshot
 
+![alt text](image.png)
+
 ### Links
 
-- Repo URL:
-- Live Site URL:
-
-## My process
-
--
-
-### Built with
-
-- Semantic HTML5 markup
--
-
-### What I learned
-
--
-
-### Continued development
-
--
-# Minimalistic-Portfolio
+- Repo URL: https://github.com/KabeloMaps/Minimalistic-Portfolio.git
+- Live Site URL: https://kabelo-maponya-portfolio.netlify.app
