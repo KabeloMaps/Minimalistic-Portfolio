@@ -446,3 +446,22 @@ footer {
 .form textarea {
   background-color: #1a1a1a;
 }
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 0.5rem;
+}
+.page-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #ffffff;
+  color: #222;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.page-btn.active {
+  background: var(--auxilary-color);
+  font-weight: bold;
+}
