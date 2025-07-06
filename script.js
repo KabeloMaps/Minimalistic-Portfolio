@@ -1,3 +1,4 @@
+// Behaviour for buttons
 document.querySelectorAll(".btn-demo").forEach((btn) => {
   btn.addEventListener("click", () => {
     window.open(btn.dataset.link, "_blank");
@@ -9,9 +10,9 @@ document.querySelectorAll(".btn-github").forEach((btn) => {
     window.open(btn.dataset.link, "_blank");
   });
 });
-
 window.history.replaceState({}, document.title, window.location.pathname);
 
+// Pagination for projects
 const projectsPerPage = 3;
 const projects = Array.from(document.querySelectorAll(".projects"));
 const pagination = document.getElementById("pagination");
